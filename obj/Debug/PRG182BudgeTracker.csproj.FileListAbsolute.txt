@@ -1,0 +1,7 @@
+C:\Users\henni\source\repos\PRG182BudgeTracker\bin\Debug\PRG182BudgeTracker.exe.config
+C:\Users\henni\source\repos\PRG182BudgeTracker\bin\Debug\PRG182BudgeTracker.exe
+C:\Users\henni\source\repos\PRG182BudgeTracker\bin\Debug\PRG182BudgeTracker.pdb
+C:\Users\henni\source\repos\PRG182BudgeTracker\obj\Debug\PRG182BudgeTracker.csproj.AssemblyReference.cache
+C:\Users\henni\source\repos\PRG182BudgeTracker\obj\Debug\PRG182BudgeTracker.csproj.CoreCompileInputs.cache
+C:\Users\henni\source\repos\PRG182BudgeTracker\obj\Debug\PRG182BudgeTracker.exe
+C:\Users\henni\source\repos\PRG182BudgeTracker\obj\Debug\PRG182BudgeTracker.pdb

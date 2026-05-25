@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +15,8 @@ namespace PRG182BudgeTracker
         static decimal limitBud = 0;
         static int nextId = 1;
 
-        static void Main()
+        
+        static void Main() // Entry point — displays main menu and routes user input to the appropriate method
         {
             while (true)
             {
@@ -56,7 +57,8 @@ namespace PRG182BudgeTracker
             }
         }
 
-        static decimal ExtractAmount(string input)
+        
+        static decimal ExtractAmount(string input) // Strips non-numeric characters from input and returns a positive decimal amount, or -1 if invalid
         {
             string cleaned = "";
             foreach (char c in input)
@@ -69,7 +71,8 @@ namespace PRG182BudgeTracker
             return -1;
         }
 
-        static void AddTrans()
+        
+        static void AddTrans() // Prompts the user for transaction details and adds a new Transaction to the list
         {
             decimal amt = 0;
             while (true)
@@ -129,7 +132,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void ViewAll()
+        
+        static void ViewAll() // Displays all transactions stored in the list
         {
             Console.Clear();
             if (listA.Count == 0)
@@ -145,7 +149,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void ShowSum()
+       
+        static void ShowSum()  // Shows total income, total expenses, net balance, and budget limit status
         {
             Console.Clear();
             Console.WriteLine($"Total Income:  {totalInc:C}");
@@ -160,7 +165,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void ShowCat()
+        
+        static void ShowCat() // Displays total expenses grouped by category
         {
             Console.Clear();
             if (dictB.Count == 0)
@@ -174,7 +180,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void SetLimit()
+        
+        static void SetLimit() // Allows the user to set a monthly budget spending limit
         {
             Console.Write("Enter monthly budget limit (e.g., 5000, R5000): ");
             string raw = Console.ReadLine();
@@ -186,7 +193,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void SplitExp()
+        
+        static void SplitExp() // Splits a shared expense evenly across a given number of people
         {
             decimal total = 0;
             while (true)
@@ -209,7 +217,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void Filter()
+        
+        static void Filter() // Filters and displays transactions by category or date range
         {
             Console.WriteLine("Filter by: 1=Category 2=Date range");
             string ch = Console.ReadLine();
@@ -235,7 +244,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void Delete()
+       
+        static void Delete()  // Removes a transaction from the list by its ID
         {
             if (listA.Count == 0)
             {
@@ -261,7 +271,8 @@ namespace PRG182BudgeTracker
             Console.ReadLine();
         }
 
-        static void UpdateTotals()
+        
+        static void UpdateTotals() // Recalculates total income, total expenses, and the category breakdown dictionary
         {
             totalInc = 0;
             totalExp = 0;
